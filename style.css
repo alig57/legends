@@ -1,0 +1,407 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Overpass", sans-serif;
+	
+}
+
+.logo{
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0px -0px 0px;
+}
+.nav_links {
+	background: #333;
+	text-align: center;
+}
+.nav_links ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 10px 10px;
+	position: relative;
+}
+
+.nav_links ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+.banner {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Knowledge_Is_Human_Homepage_Animated_Banner.gif') no-repeat center;
+	background-size: cover;
+	position: relative;
+	
+}
+.text_block{
+	width: 80%;
+	color: #ff69eb;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+.text_block h1 {
+	font-size: 50px;
+}
+
+.text_block p {
+	font-size: 16px;
+}
+
+.btn_primary{
+	display: inline-block;
+	text-decoration: none;
+	color: green;
+	border: 2px solid #edafb8;
+	padding: 12px 36px;
+	font-size: 14px;
+	background: transparent;
+	position: relative;
+	margin: 10px 0px 0px 0px;
+}
+
+.btn_primary:hover {
+	border: solid #ff69eb;
+	background: #ff69eb;
+	color: black;
+	transition: 1s;
+}
+nav .fas {
+	display: none;
+}
+
+@media(max-width: 768px) {
+	.text_block h1 {
+	font-size: 33px;
+	}
+	.nav_links ul li {
+		display: block;
+	}
+	.nav_links {
+		position: absolute;
+		background:#283618;
+		height: 100vh;
+		width: 200px;
+		text-align: left;
+		z-index: 2;
+		top: 0px;
+		left: -200px;
+		transition: 1s;
+	}
+	.nav_links .fas {
+		display: block;
+		color: white;
+		margin: 10px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.fa-bars {
+		position: absolute;
+		left: 10px;
+		top: 28px;
+		font-size: 28px;
+		cursor: pointer;
+	}
+	nav .fas {
+	display: block;
+	}
+	.p-small {
+	font-size: 11px;
+	}
+}
+
+/* Grid system*/
+.col-1 { width: 8.33%; }  /* 1/12 */
+.col-2 { width: 16.66%; } /* 2/12 */
+.col-3 { width: 25%; }    /* 3/12 */
+.col-4 { width: 33.33%; } /* 4/12 */
+.col-5 { width: 41.66%; } /* 5/12 */
+.col-6 { width: 50%; }    /* 6/12 */
+.col-7 { width: 58.33%; } /* 7/12 */
+.col-8 { width: 66.66%; } /* 8/12 */
+.col-9 { width: 75%; }    /* 9/12 */
+.col-10 { width: 83.33%; }/* 10/12 */
+.col-11 { width: 91.66%; }/* 11/12 */
+.col-12 { width: 50%; }  /* 12/12 */
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media(min-width: 768px) {
+	.container {
+		width: 750px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+@media(min-width: 992px) {
+	.container {
+		width: 970px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+@media(min-width: 1200px) {
+	.container {
+		width: 1170px;
+		padding-right: 150px;
+		padding-left: 150px;
+	}
+}
+/* Grid system*/
+
+.Hedding {
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	background: #606c38;
+	padding: 80px 0px;
+	color: white;
+}
+
+footer ul {
+	list-style: disc;
+}
+
+footer ul li {
+	display: list-item;
+	white-space: nowrap;
+	justify-content: space-between;
+	padding-top: 10px;
+	position: relative;
+	font-family: "Overpass", sans-serif;
+}
+footer h3 {
+	padding-bottom: 20px;
+	white-space: nowrap;
+}
+
+.copyright {
+	background: black;
+	color: white;
+	padding: 20px 0px;
+	text-align: center
+}
+.text-center {
+	text-align: center;
+}
+
+/* blogs */
+.sidebar {
+	padding-left: 30px;
+}
+
+.blog-border {
+	border-right: 2px #aaa solid;
+}
+
+.blog-item {
+	padding-bottom: 20px;
+}
+.blog-bn {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://media.istockphoto.com/id/1208282875/photo/online-training-concept-professional-blogger-looking-at-computer-copy-space.jpg?s=612x612&w=0&k=20&c=TpGVF8VYgEn0un_qBJT1sjdyQj6TnEz3UEpcR9lSDE0=') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/* blogs */
+
+
+/* store */
+.store-bn {
+	width: 100%;
+	height: auto;
+	min-height: 30vh;
+	background: url('banner.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.product-name {
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.price {
+	font-size: 16px;
+	color: 240046;
+	background: transparent;
+}
+
+.btn-shop {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 2x solid #6a994e;
+	padding: 5px 15px;
+	font-size: 14px;
+	background: #6a994e;
+	position: relative;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.btn-shop:hover {
+	border: solid #6a994e;
+	background: white;
+	color: black;
+	transition: 0.5s;
+}
+
+.Product-card:hover {
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+
+/* store */
+
+
+/* contact */
+
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+}
+input[type=submit] {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 2x solid #6a994e;
+	padding: 12px 40px;
+	font-size: 14px;
+	background: #6a994e;
+	position: relative;
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.contact-bn {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://t4.ftcdn.net/jpg/03/95/04/15/360_F_395041586_h21AxqD0dNjxUw3lKFiV5t7qMBJs6wfe.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+/* contact */
+
+
+
+/* team */
+
+.team-bn {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://www.shutterstock.com/image-photo/business-people-stacking-hands-dark-600nw-1319706296.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.text-block {
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+}
+.line {
+	white-space: nowrap;
+}
+.p-style {
+	padding: 30px;
+	background-color: #f8f9fa;
+	margin-top: 40px;
+	border-radius: 10px;
+	/border: 1px solid #ddd;
+}
+
+/* team */
+
+
+/* team */
+.about-bn {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://media.istockphoto.com/id/518307598/vector/flat-line-design-website-banner-of-about-us-company-information.jpg?s=612x612&w=0&k=20&c=XuRogwkMbeGTCuOwKeKQPfBkfzaqp5SOx0LG5GuOW_0=') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.team-btn {
+	 display: inline-block;
+	 padding: 12px 24px;
+	 font-size: 18px;
+     color: white;
+	 background-color: #28a745;
+	 text-decoration: none;
+	 border-radius: 5px;
+	 margin-top: 15px;
+	 text-align: center;
+ }
+/* team */
+
+
+/* services */
+.Services-bn {
+	width: 100%;
+	min-height: 40vh;
+	background: url('https://img.freepik.com/free-photo/laptop-with-glowing-screen-table-dark-top-view-copy-space_169016-51607.jpg') no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.service-border {
+	padding: 30px;
+	background-color: #f8f9fa;
+	margin-top: 40px;
+	border-radius: 10px;
+	/border: 1px solid #ddd;
+}
+
+/* services */
+
+
+.ad-bn {
+	width: 100%;
+    height: 120px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: border black solid;
+    text-align: center;
+    color: #4a5759;
+    font-size: 22px;
+    font-weight: bold;
+}
